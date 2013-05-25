@@ -1,0 +1,104 @@
+
+---
+products:
+  columns:
+  - id
+  - name
+  - description
+  - link_url
+  - image_url
+  - recyclable
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Watties Baked Beans
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/baked_beans.png
+    - false
+    - '2013-05-25 07:00:16.556963'
+    - '2013-05-25 07:20:37.294337'
+  - - '2'
+    - Glass Containers
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/glass_containers.png
+    - false
+    - '2013-05-25 07:06:11.059303'
+    - '2013-05-25 07:20:30.25272'
+  - - '3'
+    - Glass Bottle
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/glass_bottle.png
+    - false
+    - '2013-05-25 07:11:35.389315'
+    - '2013-05-25 07:11:35.389315'
+  - - '4'
+    - Egg Container
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/egg-container.png
+    - false
+    - '2013-05-25 07:40:58.847756'
+    - '2013-05-25 07:41:38.003555'
+  - - '5'
+    - Cardboxes
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/cardboxes.png
+    - false
+    - '2013-05-25 07:42:39.645702'
+    - '2013-05-25 07:42:39.645702'
+  - - '6'
+    - Paper Envelopes
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - http://google.com
+    - /assets/paper_envelopes.png
+    - false
+    - '2013-05-25 07:43:39.369654'
+    - '2013-05-25 07:43:39.369654'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - admin@binableapp.com
+    - $2a$10$q/S9IqbgyjvsfOcqPQP4q.uRleqPa.8hLDnI3TPoXa48zyq.X2dRG
+    - !!null 
+    - !!null 
+    - !!null 
+    - '3'
+    - '2013-05-25 08:28:28.000783'
+    - '2013-05-25 07:40:07.064042'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2013-05-25 06:58:57.143303'
+    - '2013-05-25 08:28:28.001988'
