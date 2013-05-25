@@ -1,6 +1,9 @@
 @import "colors";
 
 body.landing {
+	p {
+		font-size:1.0em;
+	}
 	background: $grey;
 	section#top {
 		background: $green;

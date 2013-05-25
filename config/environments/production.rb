@@ -45,6 +45,11 @@ Binable::Application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
+  # Prevent initializing the application before assets are precompiled (required for heroku)
+  config.assets.initialize_on_precompile = false
+  # Add Rails Admin assets (required)
+  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
+
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
 

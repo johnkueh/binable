@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def list
-  	@products = Product.all
+  	@products = Product.not_recyclable
   	render :layout => 'mobile'
   end
 
