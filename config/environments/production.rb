@@ -15,7 +15,7 @@ Binable::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -48,7 +48,6 @@ Binable::Application.configure do
   # Prevent initializing the application before assets are precompiled (required for heroku)
   config.assets.initialize_on_precompile = false
   # Add Rails Admin assets (required)
-  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js', "foundation/foundation-global.css", "foundation_and_overrides.scss"]
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
