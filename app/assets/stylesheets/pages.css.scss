@@ -1,0 +1,46 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+section#top {
+	background: $green;
+	color: white;
+	padding-top:80px;
+	padding-bottom:40px;
+}
+
+section#bottom {
+	color: $light-grey;
+	padding-top: 25px;
+}
+
+.landing-phone {
+	position:absolute;
+}
+
+a.landing-click-here {
+	color: $green;
+}
+
+.submit-button {
+	background: $blue;
+	padding: 10px 25px;
+	color:white;
+	border-radius: 5px;
+	display: inline-block;
+	border:0;
+	font-size:13px;
+	cursor:pointer;
+	margin-top:-2px;
+}
+
+.submit-button:hover {
+	background: $dark-blue;
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		text-align:center;
+	}
+}
