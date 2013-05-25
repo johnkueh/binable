@@ -1,2 +1,16 @@
-<h1>Pages#list</h1>
-<p>Find me in app/views/pages/list.html.erb</p>
+<section id="list">
+	<div class="row">
+		<div class="large-columns-12 center">
+			<p><strong>Don't recycle these <br /></strong> in <span class="location">Surry Hills</span></p>
+		</div>
+	</div>
+	<div class="row">
+		<% @products.each do |p| %>
+			<div class="small-6 columns center">
+				<div class="circle">
+					<%= image_tag "#{p.image_url}", :class => 'product-image' %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</section>

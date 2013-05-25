@@ -1,0 +1,30 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+body.mobile {
+	color:white;
+	padding-top:60px;
+	span.location {
+		background: $dark-green;
+		padding:3px 8px;
+		border-radius: 3px;
+	}
+
+	.circle {
+		border-radius: 50%;
+		width: 130px;
+		height: 130px;
+		background-color:white;
+		margin: 20px auto;
+		padding:20px;
+		/* width and height can be anything, as long as they're equal */
+	}
+
+	img.product-image {
+		width:90px;
+		height:90px;
+		margin:auto;
+	}
+}

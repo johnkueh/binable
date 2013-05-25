@@ -3,43 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "colors";
 
-section#top {
-	background: $green;
-	color: white;
-	padding-top:80px;
-	padding-bottom:60px;
-}
-
-section#bottom {
-	color: $light-grey;
-	padding-top: 25px;
-}
-
-.landing-phone {
-	position:absolute;
-}
-
-a.landing-click-here {
-	color: $green;
-}
-
-.submit-button {
-	background: $blue;
-	padding: 10px 25px;
-	color:white;
-	border-radius: 5px;
-	display: inline-block;
-	border:0;
-	font-size:13px;
-	cursor:pointer;
-	margin-top:-2px;
-	-webkit-appearance: none;
-}
-
-.submit-button:hover {
-	background: $dark-blue;
-}
-
 @media only screen and (max-width: 768px) {
 	.row {
 		text-align:center;

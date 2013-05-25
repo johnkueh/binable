@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def list
+  	@products = Product.all
+  	render :layout => 'mobile'
   end
 
   def leaderboard
