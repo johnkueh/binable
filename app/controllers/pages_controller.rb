@@ -11,5 +11,6 @@ class PagesController < ApplicationController
   end
 
   def leaderboard
+  	render :layout => 'mobile'
   end
 end

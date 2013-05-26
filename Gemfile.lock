@@ -51,6 +51,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fastercsv (1.5.5)
+    font-awesome-rails (3.1.1.2)
+      railties (>= 3.2, < 5.0)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
@@ -160,6 +162,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   fastercsv
+  font-awesome-rails
   jquery-rails
   pg
   rails (= 3.2.13)
