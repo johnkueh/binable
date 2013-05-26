@@ -32,21 +32,24 @@ body.community {
 		}
 		li {
 			.row {
-				margin-top:-23px;
+				margin-top:-15px;
+				padding-bottom:10px;
 				text-align:left;
 			}
-			padding: 0;
-			margin: 0;
 			border-bottom: 1px solid $light-green;
 			p {
 				margin: 0;
-				font-size:1.1em;
+				font-size:1.0em;
 				font-weight:700;
 			}
 		}
 		li.current {
 			border:0;
 			background: $blue;
+			.circle-small {
+				color: $blue;
+				background-color: rgba(255,255,255,1.0);
+			}
 		}
 	}
 }
