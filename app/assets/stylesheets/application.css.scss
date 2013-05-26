@@ -11,9 +11,17 @@
  *= require_self
  *= require_tree .
  *= require foundation_and_overrides
+ *= require font-awesome
 */
 
 @import "colors";
+
+.left {
+	text-align:left !important;
+}
+.right {
+	text-align:right !important;
+}
 .center {
-	text-align:center;
+	text-align:center !important;
 }

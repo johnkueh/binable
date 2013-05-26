@@ -1,0 +1,50 @@
+<body class="community">
+	<div class="community-nav">
+		<p><i class="icon-group"></i> Community Leaderboard</p>
+	</div>
+	<div class="community-map">
+		<%= image_tag "http://maps.google.com/maps/api/staticmap?center=40.705628,-73.669682&zoom=15&markers=40.703026,-73.669444&size=500x300&sensor=false" %>
+	</div>
+	<div class="community-header">
+		<p>Current Ranking</p>
+	</div>
+	<div class="community-list-container">
+		<ul class="community-list">
+			<% communities = [
+				{ :name => 'Marrickville', :bins_saved => '768' },
+				{ :name => 'Campervale', :bins_saved => '330' },
+				{ :name => 'Chippendale', :bins_saved => '410' },
+				{ :name => 'Inner Sydney', :bins_saved => '230' },
+				{ :name => 'Newtown', :bins_saved => '30' }
+			] %>
+			<% communities.sort {|a,b| b[:bins_saved].to_i <=> a[:bins_saved].to_i}.each_with_index do |c, i| %>
+			<li>
+				<div class="row">
+					<div class="small-2 columns center">
+						<p><%= i %></p>
+					</div>
+					<div class="small-6 columns">
+						<p class="left"><%= c[:name] %></p>
+					</div>
+					<div class="small-2 columns small-offset-1 end">
+						<p><%= c[:bins_saved] %></p>
+					</div>
+				</div>
+			</li>
+			<% end %>
+			<li class="current">
+				<div class="row">
+					<div class="small-2 columns center">
+						<p>20</p>
+					</div>
+					<div class="small-6 columns">
+						<p class="left">Surry Hills</p>
+					</div>
+					<div class="small-2 columns small-offset-1 end">
+						<p>2</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>

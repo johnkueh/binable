@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   	render :layout => 'mobile'
   end
 
-  def leaderboard
+  def community
   	render :layout => 'mobile'
   end
 end

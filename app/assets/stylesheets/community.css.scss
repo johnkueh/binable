@@ -1,0 +1,52 @@
+@import "colors";
+
+body.community {
+	color:white;
+	div.community-map {
+		text-align:center;
+	}
+	div.community-nav {
+		text-align:center;
+		background-color: $dark-green;
+		padding: {
+			top:10px;
+			bottom:10px;
+		}
+		p {
+			padding: 0;
+			margin: 0;
+		}
+	}
+	div.community-header {
+		text-align:center;
+		padding: {
+			top:10px;
+		};
+	}
+
+	ul.community-list {
+		margin-top:-20px;
+		line-height: 1.0;
+		li:first-child {
+			border-top:1px solid $light-green;
+		}
+		li {
+			.row {
+				margin-top:-23px;
+				text-align:left;
+			}
+			padding: 0;
+			margin: 0;
+			border-bottom: 1px solid $light-green;
+			p {
+				margin: 0;
+				font-size:1.1em;
+				font-weight:700;
+			}
+		}
+		li.current {
+			border:0;
+			background: $blue;
+		}
+	}
+}

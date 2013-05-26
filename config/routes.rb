@@ -5,11 +5,11 @@ Binable::Application.routes.draw do
 
   get "pages/home"
   get "pages/list"
-  get "pages/leaderboard"
+  get "pages/community"
   get "pages/landing"
   match "/survey" => redirect("https://binable.typeform.com/to/uYEj7w")
 
   get "/list" => "pages#list"
-  get "/leaderboard" => "pages#leaderboard"
+  get "/community" => "pages#community"
   root :to => 'pages#landing'
 end
