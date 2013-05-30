@@ -22,7 +22,10 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <%= yield %>
+  <body class="landing">
+  	<%= yield %>
+    <%= javascript_include_tag "application" %>
+  </body>
 
   <% if Rails.env.production? %>
   <script>

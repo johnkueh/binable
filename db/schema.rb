@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130525065532) do
+ActiveRecord::Schema.define(:version => 20130530135212) do
+
+  create_table "communities", :force => true do |t|
+    t.string   "name"
+    t.integer   "bins_saved"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "products", :force => true do |t|
     t.string   "name"

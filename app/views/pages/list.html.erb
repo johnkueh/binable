@@ -2,15 +2,17 @@
 	<section id="list">
 		<div class="row">
 			<div class="large-columns-12 center">
-				<p><strong>Don't recycle these <br /></strong> in <span class="location">Surry Hills <i class="icon-caret-down"></i></span></p>
+				<p><strong>DON'T recycle these <br /></strong> in <span class="location">Surry Hills <i class="icon-caret-down"></i></span></p>
 			</div>
 		</div>
 		<div class="row">
 			<% @products.each do |p| %>
 				<div class="small-6 columns center">
-					<div class="circle">
-						<%= image_tag "#{p.image_url}", :class => 'product-image' %>
-					</div>
+					<a href="/products/<%= p.id %>">
+						<div class="circle">
+							<%= image_tag "#{p.image_url}", :class => 'product-image' %>
+						</div>
+					</a>
 				</div>
 			<% end %>
 		</div>
