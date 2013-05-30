@@ -3,6 +3,68 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "colors";
 
+@mixin circle {
+	border-radius: 50%;
+	width: 145px;
+	height: 145px;
+	background-color:white;
+	margin: 5px auto;
+	padding:10px;
+	padding-top:20px;
+}
+
+@mixin padded-box{
+	display:inline-block;
+	margin-top:15px;
+	color:white;
+	font-size:18px;
+	background:$dark-green;
+	padding:10px;
+	border-radius:3px;
+}
+
+.circle {
+	@include circle;
+}
+
+.circle-no {
+	@include circle;
+	position:absolute;
+	margin-left:140px;
+	width:50px;
+	height:50px;
+	color: $green;
+	font-size:30px;
+	padding-top:10px;
+}
+
+.circle-small {
+	@include circle;
+	width: 180px;
+	height: 180px;
+	padding-top:10px;
+}
+
+.circle-large {
+	@include circle;
+	width: 180px;
+	height: 180px;
+	padding-top:10px;
+}
+
+img.product-image {
+	width:105px;
+	height:105px;
+	margin:auto;
+}
+
+img.product-image-large {
+	width:135px;
+	height:135px;
+	margin:auto;
+	margin-top:10px;
+}
+
 body.mobile {
 	color:white;
 	padding-top:50px;
@@ -11,68 +73,6 @@ body.mobile {
 		padding:3px 8px;
 		border-radius: 3px;
 		font-weight:800;
-	}
-
-	@mixin circle {
-		border-radius: 50%;
-		width: 145px;
-		height: 145px;
-		background-color:white;
-		margin: 5px auto;
-		padding:10px;
-		padding-top:20px;
-	}
-
-	@mixin padded-box{
-		display:inline-block;
-		margin-top:15px;
-		color:white;
-		font-size:18px;
-		background:$dark-green;
-		padding:10px;
-		border-radius:3px;
-	}
-
-	.circle {
-		@include circle;
-	}
-
-	.circle-no {
-		@include circle;
-		position:absolute;
-		margin-left:140px;
-		width:50px;
-		height:50px;
-		color: $green;
-		font-size:30px;
-		padding-top:10px;
-	}
-
-	.circle-small {
-		@include circle;
-		width: 180px;
-		height: 180px;
-		padding-top:10px;
-	}
-
-	.circle-large {
-		@include circle;
-		width: 180px;
-		height: 180px;
-		padding-top:10px;
-	}
-
-	img.product-image {
-		width:105px;
-		height:105px;
-		margin:auto;
-	}
-
-	img.product-image-large {
-		width:135px;
-		height:135px;
-		margin:auto;
-		margin-top:10px;
 	}
 
 	section#list {
