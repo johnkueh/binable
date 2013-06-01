@@ -19,7 +19,7 @@ Binable::Application.routes.draw do
   get "/settings" => 'users#settings'
 
   match "/vote" => redirect("https://pollenizer.typeform.com/to/wbUmUf")
-  match "/download" => redirect("http://bit.ly/binable")
+  match "/download" => redirect("http://bit.ly/13a4rJY")
 
   resources :products
   resources :communities
