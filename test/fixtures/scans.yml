@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product_id: 1
+  scanned_at: 2013-06-01 09:39:29
+
+two:
+  product_id: 1
+  scanned_at: 2013-06-01 09:39:29

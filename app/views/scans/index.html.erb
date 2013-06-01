@@ -1,0 +1,46 @@
+<body class="community scan">
+	<div class="scans-header">
+		<p>Your Scans</p>
+	</div>
+	<div class="score-scans">
+		<p class="description-huge">Total &nbsp;<span class="current-score"><%= @scans.length %></span></p>
+	</div>
+	<div class="community-list-container">
+		<ul class="scan-list">
+			<li>
+				<div class="row">
+					<div class="small-5 columns">
+						<p>Name</p>
+					</div>
+					<div class="small-3 columns">
+						<p>Recyclable?</p>
+					</div>
+					<div class="small-4 columns">
+						<p>Date</p>
+					</div>
+				</div>
+			</li>
+			<% @scans.each_with_index do |s, i| %>
+			<li>
+				<div class="row">
+					<div class="small-5 columns">
+						<p><strong><%= s.product.name %></strong></p>
+					</div>
+					<div class="small-3 columns">
+						<p class="left">
+							<% if s.product.recyclable %>
+								<i class='icon-ok'></i>
+							<% else %>
+								<i class='icon-remove'></i>
+							<% end %>
+						</p>
+					</div>
+					<div class="small-4 columns">
+						<p><%= s.scanned_at.to_formatted_s(:short) %></p>
+					</div>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+</body>

@@ -1,5 +1,9 @@
 Binable::Application.routes.draw do
 
+  get "scans/index"
+
+  get "scans/show"
+
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
@@ -14,6 +18,7 @@ Binable::Application.routes.draw do
 
   resources :products
   resources :communities
+  resources :scans
 
   root :to => 'pages#landing'
 end
