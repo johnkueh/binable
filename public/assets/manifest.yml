@@ -3,6 +3,14 @@ baked_beans.png: baked_beans-a1e81e44b350e0f6fdcfe485fed98a94.png
 baked_beans/index.png: baked_beans-a1e81e44b350e0f6fdcfe485fed98a94.png
 binable_logo.png: binable_logo-93dd87635749d2a144bbd3351a8c243a.png
 binable_logo/index.png: binable_logo-93dd87635749d2a144bbd3351a8c243a.png
+btn_fb_sml.png: btn_fb_sml-c97b584e553a68d97dde070508b6fa9d.png
+btn_fb_sml/index.png: btn_fb_sml-c97b584e553a68d97dde070508b6fa9d.png
+btn_google_sml.png: btn_google_sml-81bc67c6d853a1094e9d8a1be98d6953.png
+btn_google_sml/index.png: btn_google_sml-81bc67c6d853a1094e9d8a1be98d6953.png
+btn_linkedin_sml.png: btn_linkedin_sml-0d25c8e69b60aa0b8a8fa0a798184341.png
+btn_linkedin_sml/index.png: btn_linkedin_sml-0d25c8e69b60aa0b8a8fa0a798184341.png
+btn_twitter_sml.png: btn_twitter_sml-e5512b57354622e443c4c4650ceee810.png
+btn_twitter_sml/index.png: btn_twitter_sml-e5512b57354622e443c4c4650ceee810.png
 cardboxes.png: cardboxes-54bf285aefac419b6620a59aa9aab63e.png
 cardboxes/index.png: cardboxes-54bf285aefac419b6620a59aa9aab63e.png
 egg-container.png: egg-container-7c93275da49f30e0dfdc7a8d449ed23a.png
