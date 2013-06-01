@@ -1,8 +1,8 @@
 <body class="community">
 	<div class="community-map">
 		<%= image_tag "http://maps.google.com/maps/api/staticmap?center=40.705628,-73.669682&zoom=15&markers=40.703026,-73.669444&size=500x300&sensor=false" %>
-		<div class="community-score">
-			<p class="description-huge">You've earned <span class="current-score">345</span></p>
+		<div class="score">
+			<p class="description-huge">You've earned &nbsp;<span class="current-score"><%= Scan.all.length %></span></p>
 			<p class="description-small">For your community!</p>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 						<p class="left">Surry Hills</p>
 					</div>
 					<div class="small-4 columns end">
-						<p><i class="icon-trash"></i> &nbsp;2</p>
+						<p><i class="icon-trash"></i> &nbsp;<%= Scan.all.length %></p>
 					</div>
 				</div>
 			</li>

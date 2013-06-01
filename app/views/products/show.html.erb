@@ -1,21 +1,20 @@
 <body class="mobile">
 	<section id="list">
 		<div class="row">
-			<div class="small-2 columns small-offset-1">
-				<a href="/list" class="back"><i class="icon-chevron-left"></i></a>
-			</div>
-			<div class="small-8 columns end">
-				<p class="right"><strong><%= @product.name %></strong></p>
+			<div class="small-12 columns center">
+				<p><strong><%= @product.name %></strong></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="small-12 columns center">
-				<div class="circle-large">
-					<div class="circle-no">
-						<i class="icon-remove"></i>
+				<a href="/list">
+					<div class="circle-large">
+						<div class="circle-no">
+							<i class="icon-remove"></i>
+						</div>
+						<%= image_tag "#{@product.image_url}", :class => 'product-image-large' %>
 					</div>
-					<%= image_tag "#{@product.image_url}", :class => 'product-image-large' %>
-				</div>
+				</a>
 			</div>
 			<div class="small-10 columns small-offset-1 centered left">
 				<p class="description"><%= @product.description %></p>
