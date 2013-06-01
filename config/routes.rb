@@ -11,10 +11,12 @@ Binable::Application.routes.draw do
   get "pages/home"
   get "pages/list"
   get "pages/landing"
+  get "users/settings"
   match "/survey" => redirect("https://binable.typeform.com/to/uYEj7w")
 
-  get "/list" => "pages#list"
+  get "/list" => "products#index"
   get "/community" => 'communities#index'
+  get "/settings" => 'users#settings'
 
   resources :products
   resources :communities
